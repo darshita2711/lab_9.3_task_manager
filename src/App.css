@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Filter Section */
+.filter-panel {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+}
+
+.filter-panel label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.filter-panel select,
+.task-actions select {
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Task Count & Messages */
+.task-count {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.empty-message {
+  padding: 15px;
+  border: 1px dashed #ccc;
+  text-align: center;
+}
+
+/* Task List */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Individual Task Card */
+.task-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.task-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.task-card p {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.task-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* Simple text/badges */
+.priority,
+.status-badge {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Task Actions */
+.task-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-actions label {
+  font-size: 13px;
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: 1px solid #cc0000;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #cc0000;
+}
