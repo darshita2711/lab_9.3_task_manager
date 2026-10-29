@@ -1,32 +1,73 @@
-# React + TypeScript + Vite
+# Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Description
 
-Currently, two official plugins are available:
+A simple Task Manager application built with React, TypeScript, and CSS. It displays tasks as separate cards and allows users to filter tasks by status and priority and delete tasks.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Display tasks as individual cards.
+- Filter tasks by status.
+- Filter tasks by priority.
+- Show task title, description, status, priority, and due date.
+- Delete tasks.
+- Display a message when no tasks match the selected filters.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the Oxlint configuration
+- React
+- TypeScript
+- CSS
+- Vite
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Components
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+- **App:** Manages task data and filtering.
+- **TaskFilter:** Provides status and priority dropdowns.
+- **TaskList:** Displays the filtered task cards.
+- **TaskItem:** Displays the details of one task and provides a Delete button.
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## How to Run
+
+1. Clone the repository:
+
+   ```bash
+   git clone YOUR_GITHUB_REPOSITORY_URL
+   ```
+
+2. Open the project folder:
+
+   ```bash
+   cd YOUR_PROJECT_FOLDER
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL shown in your terminal.
+
+## Example Usage
+
+1. Open the Task Manager application.
+2. View the task cards.
+3. Select a status to filter tasks.
+4. Select a priority to filter tasks.
+5. Click Delete to remove a task.
+
+## Learning Objectives
+
+- Practice React components and props.
+- Use TypeScript interfaces and types.
+- Manage state with `useState`.
+- Filter arrays of objects.
+- Render lists using `map()` and unique keys.
+- Apply CSS styling and conditional rendering.
